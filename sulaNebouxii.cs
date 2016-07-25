@@ -6,18 +6,13 @@ namespace zoolandia
 
     public class sulaNebouxii : Animal 
     {
+        public sulaNebouxii(string name, string commonname) : base(name, commonname){}
 
-        public string Name = "Benny";
-
-        public string CommonName = "Blue-footed Booby";
-
-        public float GetWingspan() 
+            public override int GetToothCount(int numOfTeeth)
         {
-            return 4.9F;
+            var animalTeeth = base.GetToothCount(3);
+            return animalTeeth + numOfTeeth;
         }
-
-
-        public void FlyTo(string Galapagos){}
 
     }
 }

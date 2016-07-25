@@ -6,17 +6,17 @@ namespace zoolandia
 
     public class chelonoidisNigra : Animal 
     {
-        public string Name = "Charlie";
+        public chelonoidisNigra(string name, string commonname) : base(name, commonname){}
 
-        public string CommonName = "Galapagos Tortoise";
-        
-        public int GetWeight() 
+       
+       
+
+
+            public override int GetToothCount(int numOfTeeth)
         {
-            return 919;
+            var animalTeeth = base.GetToothCount(3);
+            return animalTeeth + numOfTeeth;
         }
-
-        public void DoSomethingSlowly(string Walk)
-        {}
 
     }
 }

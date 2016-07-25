@@ -5,18 +5,32 @@ namespace zoolandia
 
 
 
-    public class Animal
+    public abstract class Animal
     {
-
-        public static string sleep()
+        public Animal(string name)
         {
-           return "Animal is asleep";
+            this.Name = name;
         }
 
-
-        public static string eat()
+        public Animal(string name, string commonname)
         {
-            return "Animal is eating";
+            this.Name = name;
+            this.CommonName = commonname;
+            
         }
+
+        
+        public string Name {get; set;}
+
+        public string CommonName {get; set;}
+        
+        
+        public virtual int GetToothCount(int numOfTeeth)
+        {
+        
+            return 0;
+        }
+        
+
     }
 }

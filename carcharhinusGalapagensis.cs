@@ -5,17 +5,17 @@ namespace zoolandia
     public class carcharhinusGalapagensis : Animal 
     {
 
-        public string Name = "Oscar";
+         public carcharhinusGalapagensis(string name, string commonname) : base(name, commonname){}
 
-        public string CommonName = "Galapagos Shark";
+       
+       
 
 
-        public float GetLength() 
+            public override int GetToothCount(int numOfTeeth)
         {
-            return 9.8F;
+            var animalTeeth = base.GetToothCount(3);
+            return animalTeeth + numOfTeeth;
         }
 
-
-        public void  EatTrash(string RustyCan) {}
     }
 }

@@ -1,21 +1,31 @@
 
-
 namespace zoolandia
 {
     
 
     public class carcharodonMegalodon : Animal 
     {
-        public string Name = "Bubbles";
-        public string CommonName = "Megalodon Shark";
+        public carcharodonMegalodon(string name, string commonname) : base(name, commonname){}
+            
 
-        public int GetLength()
+
+       
+       
+
+
+            public override int GetToothCount(int numOfTeeth)
         {
-            return 60;
+            var animalTeeth = base.GetToothCount(3);
+            return animalTeeth + numOfTeeth;
         }
 
-        public void CatchPrey(string GreatWhite){}
+        
+        
+       
 
+        
+
+       
 
     }
 }
