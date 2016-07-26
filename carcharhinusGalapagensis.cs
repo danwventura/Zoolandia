@@ -5,7 +5,17 @@ namespace zoolandia
     public class carcharhinusGalapagensis : Animal 
     {
 
-         public carcharhinusGalapagensis(string name, string commonname) : base(name, commonname){}
+         public carcharhinusGalapagensis(string name, string commonname) : base(name, commonname)
+         {
+             this.Name = name;
+             this.CommonName = commonname;
+         }
+
+         public carcharhinusGalapagensis(string name) : base(name)
+        {
+            this.Name = name;
+            
+        }
 
        
        

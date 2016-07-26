@@ -30,6 +30,12 @@ namespace zoolandia
         
             return "teeth";
         }
+
+
+        public static string FeedMe(int NumOfFoods, string TypeOfFood) 
+        {
+            return "You fed me "+ NumOfFoods + " " + TypeOfFood + " .";
+        }
         
 
     }

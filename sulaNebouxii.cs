@@ -6,7 +6,17 @@ namespace zoolandia
 
     public class sulaNebouxii : Animal 
     {
-        public sulaNebouxii(string name, string commonname) : base(name, commonname){}
+        public sulaNebouxii(string name, string commonname) : base(name, commonname)
+        {
+            this.Name = name;
+            this.CommonName = commonname;
+        }
+
+        public sulaNebouxii(string name) : base(name)
+        {
+            this.Name = name;
+            
+        }
 
             public override string GetToothCount(int numOfTeeth)
         {
