@@ -11,10 +11,10 @@ namespace zoolandia
        
 
 
-            public override int GetToothCount(int numOfTeeth)
+            public override string GetToothCount(int numOfTeeth)
         {
             var animalTeeth = base.GetToothCount(3);
-            return animalTeeth + numOfTeeth;
+            return numOfTeeth + " " + animalTeeth;
         }
 
     }

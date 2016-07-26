@@ -25,10 +25,10 @@ namespace zoolandia
         public string CommonName {get; set;}
         
         //return a string for concatenation --> base.GetToothCount return a string from base and concatenate with override method
-        public virtual int GetToothCount(int numOfTeeth)
+        public virtual string GetToothCount(int numOfTeeth)
         {
         
-            return 0;
+            return "teeth";
         }
         
 
