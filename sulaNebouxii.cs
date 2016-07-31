@@ -4,7 +4,7 @@ namespace zoolandia
 {
     
 
-    public class sulaNebouxii : Animal 
+    public class sulaNebouxii : sula 
     {
         public sulaNebouxii(string name, string commonname) : base(name, commonname)
         {
@@ -18,11 +18,7 @@ namespace zoolandia
             
         }
 
-            public override string GetToothCount(int numOfTeeth)
-        {
-            var animalTeeth = base.GetToothCount(3);
-            return numOfTeeth + " " + animalTeeth;
-        }
+            
 
     }
 }

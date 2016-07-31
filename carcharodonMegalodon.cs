@@ -3,7 +3,7 @@ namespace zoolandia
 {
     
 
-    public class carcharodonMegalodon : Animal 
+    public class carcharodonMegalodon : carcharodon 
     {
         public carcharodonMegalodon(string name, string commonname) : base(name, commonname)
         {
@@ -19,13 +19,9 @@ namespace zoolandia
 
        
        
+        public static string Lazarus = "I have come back from extinction!";
 
-
-        public override string GetToothCount(int numOfTeeth)
-        {
-            var animalTeeth = base.GetToothCount(3);
-            return numOfTeeth + " " + animalTeeth;
-        }
+        
 
     
         

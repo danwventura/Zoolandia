@@ -2,30 +2,28 @@
 namespace zoolandia
 {
     
-    public class carcharhinusGalapagensis : Animal 
+    public class carcharhinusGalapagensis : carcharhinus 
     {
 
          public carcharhinusGalapagensis(string name, string commonname) : base(name, commonname)
          {
-             this.Name = name;
-             this.CommonName = commonname;
+             System.Console.WriteLine(this.Name);
+             System.Console.WriteLine(this.CommonName);
+
          }
 
          public carcharhinusGalapagensis(string name) : base(name)
         {
-            this.Name = name;
             
         }
 
+        public static string Galapagos = "I live in near the Galapagos Islands";
+
        
        
 
 
-            public override string GetToothCount(int numOfTeeth)
-        {
-            var animalTeeth = base.GetToothCount(3);
-            return numOfTeeth + " " + animalTeeth;
-        }
+            
 
     }
 }

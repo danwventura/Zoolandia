@@ -15,17 +15,21 @@ namespace ConsoleApplication
          Console.WriteLine("I have a " + MyMegalodon.CommonName + " named " + MyMegalodon.Name + ".");
          Console.WriteLine(MyMegalodon.Name + " has " + MyMegalodon.GetToothCount(600));
          Console.WriteLine(Animal.FeedMe(5, "Great White Sharks"));
+         Console.WriteLine(carcharodonMegalodon.Lazarus);
 
          carcharhinusGalapagensis MyGalapagos = new carcharhinusGalapagensis("Fluffy", "Galapagos Shark");
          Console.WriteLine("I have a " + MyGalapagos.CommonName + " named " + MyGalapagos.Name + ".");
          Console.WriteLine(MyGalapagos.Name + " has " + MyGalapagos.GetToothCount(300));
          Console.WriteLine(Animal.FeedMe(12, "beer cans"));
+         Console.WriteLine(carcharhinusGalapagensis.Galapagos);
 
 
          chelonoidisNigra MyTortoise = new chelonoidisNigra("Charlie", "Galapagos Tortoise");
          Console.WriteLine("I have a " + MyTortoise.CommonName + " named " + MyTortoise.Name + ".");
          Console.WriteLine(MyTortoise.Name + " has " + MyTortoise.GetToothCount(1));
+         Console.WriteLine(chelonoidisNigra.EatPlants);
          Console.WriteLine(Animal.FeedMe(3, "leaves"));
+         Console.WriteLine(MyTortoise.LayEggs(300));
 
 
         sulaNebouxii MyBlueFootedBooby = new sulaNebouxii("Benny", "Blue-footed Booby");
