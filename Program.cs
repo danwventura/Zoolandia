@@ -16,12 +16,14 @@ namespace ConsoleApplication
          Console.WriteLine(MyMegalodon.Name + " has " + MyMegalodon.GetToothCount(600));
          Console.WriteLine(Animal.FeedMe(5, "Great White Sharks"));
          Console.WriteLine(carcharodonMegalodon.Lazarus);
+         MyMegalodon.FlyingJaws();
 
          carcharhinusGalapagensis MyGalapagos = new carcharhinusGalapagensis("Fluffy", "Galapagos Shark");
          Console.WriteLine("I have a " + MyGalapagos.CommonName + " named " + MyGalapagos.Name + ".");
          Console.WriteLine(MyGalapagos.Name + " has " + MyGalapagos.GetToothCount(300));
          Console.WriteLine(Animal.FeedMe(12, "beer cans"));
          Console.WriteLine(carcharhinusGalapagensis.Galapagos);
+         MyGalapagos.SwimFast();
 
 
          chelonoidisNigra MyTortoise = new chelonoidisNigra("Charlie", "Galapagos Tortoise");
@@ -30,12 +32,14 @@ namespace ConsoleApplication
          Console.WriteLine(chelonoidisNigra.EatPlants);
          Console.WriteLine(Animal.FeedMe(3, "leaves"));
          Console.WriteLine(MyTortoise.LayEggs(300));
+         MyTortoise.MoveSlowly();
 
 
         sulaNebouxii MyBlueFootedBooby = new sulaNebouxii("Benny", "Blue-footed Booby");
          Console.WriteLine("I have a " + MyBlueFootedBooby.CommonName + " named " + MyBlueFootedBooby.Name + ".");
          Console.WriteLine(MyBlueFootedBooby.Name + " has " + MyBlueFootedBooby.GetToothCount(0));
          Console.WriteLine(Animal.FeedMe(6, "minnows"));
+         MyBlueFootedBooby.Fly();
 
         }
     }

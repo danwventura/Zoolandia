@@ -4,7 +4,7 @@ namespace zoolandia
 {
     
 
-    public class sulaNebouxii : sula 
+    public class sulaNebouxii : sula, IFly 
     {
         public sulaNebouxii(string name, string commonname) : base(name, commonname)
         {
@@ -16,6 +16,11 @@ namespace zoolandia
         {
             this.Name = name;
             
+        }
+
+        public void Fly()
+        {
+            System.Console.WriteLine("I am flying!");
         }
 
             

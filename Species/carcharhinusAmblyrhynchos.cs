@@ -1,6 +1,6 @@
 namespace zoolandia
 {
-    public class carcharhinusAmblyrhynchos : carcharhinus
+    public class carcharhinusAmblyrhynchos : carcharhinus, ISwimFast
     {
         public carcharhinusAmblyrhynchos(string name, string commonname) : base(name, commonname)
          {
@@ -15,5 +15,10 @@ namespace zoolandia
         }
 
         public static string HuntInReefs = "I hunt in the reefs.";
+
+         public void SwimFast()
+        {
+        System.Console.WriteLine("Warp Speed!");
+        }
     }
 }

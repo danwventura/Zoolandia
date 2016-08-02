@@ -2,7 +2,7 @@
 namespace zoolandia
 {
     
-    public class carcharodonCarcharias : carcharodon
+    public class carcharodonCarcharias : carcharodon, IFlyingJaws
     {
         public carcharodonCarcharias(string name, string commonname) : base(name, commonname)
          {
@@ -15,12 +15,13 @@ namespace zoolandia
         {
             
         }
-
-
         public static string AirJaws = "I'll fly through the air with the greatest of ease";
 
 
-
+        public void FlyingJaws()
+        {
+            System.Console.WriteLine("I can fly like a bird!");
+        }
 
 
 

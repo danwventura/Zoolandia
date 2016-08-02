@@ -1,6 +1,6 @@
 namespace zoolandia
 {
-    public class carcharhinusBrevipinna : carcharhinus
+    public class carcharhinusBrevipinna : carcharhinus, ISwimFast
     {
         public carcharhinusBrevipinna(string name, string commonname) : base(name, commonname)
          {
@@ -17,7 +17,10 @@ namespace zoolandia
 
         public static string SpinningLeap = "When I hunt I use a spinning leap to catch my prey";
 
-
+         public void SwimFast()
+        {
+        System.Console.WriteLine("Warp Speed!");
+        }
 
     }
 }

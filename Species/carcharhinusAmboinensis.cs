@@ -1,6 +1,6 @@
 namespace zoolandia
 {
-    public class carcharhinusAmboinensis : carcharhinus
+    public class carcharhinusAmboinensis : carcharhinus, ISwimFast
     {
         public carcharhinusAmboinensis(string name, string commonname) : base(name, commonname)
          {
@@ -15,5 +15,10 @@ namespace zoolandia
         }
 
         public static string PigEyes = "I have eyes and a snout like a pig";
+
+         public void SwimFast()
+        {
+        System.Console.WriteLine("Warp Speed!");
+        }
     }
 }

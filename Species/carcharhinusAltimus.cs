@@ -1,7 +1,7 @@
 
 namespace zoolandia
 {
-    public class carcharhinusAltimus : carcharhinus 
+    public class carcharhinusAltimus : carcharhinus, ISwimFast 
     {
         public carcharhinusAltimus(string name, string commonname) : base(name, commonname)
          {
@@ -16,5 +16,10 @@ namespace zoolandia
         }
 
         public static string BigNose = "I have a big nose";
+
+         public void SwimFast()
+        {
+        System.Console.WriteLine("Warp Speed!");
+        }
     }
 }

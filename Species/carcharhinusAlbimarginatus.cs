@@ -1,7 +1,7 @@
 
 namespace zoolandia
 {
-    public class carcharhinusAlbimarginatus : carcharhinus
+    public class carcharhinusAlbimarginatus : carcharhinus, ISwimFast
     {
         public carcharhinusAlbimarginatus(string name, string commonname) : base(name, commonname)
          {
@@ -18,6 +18,9 @@ namespace zoolandia
 
         public static string SilverTip= "I have a silver tip on my dorsal fin!";
 
-
+         public void SwimFast()
+        {
+        System.Console.WriteLine("Warp Speed!");
+        }
     }
 }

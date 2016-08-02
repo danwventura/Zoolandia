@@ -3,7 +3,7 @@
 namespace zoolandia
 {
     
-    public class carcharhinusAcronotus : carcharhinus
+    public class carcharhinusAcronotus : carcharhinus, ISwimFast
     {
         public carcharhinusAcronotus(string name, string commonname) : base(name, commonname)
          {
@@ -17,6 +17,11 @@ namespace zoolandia
             
         }
         public static string BlackNose = "I have a black nose";
+
+        public void SwimFast()
+        {
+        System.Console.WriteLine("Warp Speed!");
+        }
     }
 
 
